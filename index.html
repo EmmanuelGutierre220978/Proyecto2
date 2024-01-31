@@ -1,1 +1,99 @@
-hola
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #fff;
+            padding: 15px 0;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .d-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .button-left a,
+        .button-right a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .search input {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        /* Add responsive design for smaller screens */
+        @media (max-width: 768px) {
+            .button-left {
+                display: none;
+            }
+            .search {
+                flex: 1;
+            }
+            .button-right {
+                text-align: right;
+            }
+        }
+
+        /* Add styles for your logo images if needed */
+        .logo img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <div class="d-flex">
+
+            <div class="button-left">
+                <a href="#" class="logo">
+                    <img src="" alt="">
+                </a>
+                <a href="">Inicio</a>
+                <a href="">Explorar</a>
+                <a href="">Crear</a>
+                <a href="">Inicio de sesion</a>
+            </div>
+
+            <div class="search">
+                <input type="text">
+            </div>
+
+            <a href="">Mi perfil</a>
+
+            <div class="button-right">
+                <a href="#" class="logo">
+                    <img src="" alt="">
+                </a>
+                <a href="#" class="logo">
+                    <img src="" alt="">
+                </a>
+                <a href="#" class="logo">
+                    <img src="" alt="">
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+</body>
+</html>
